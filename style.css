@@ -1,0 +1,107 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    background-color: #fab22e;
+    font-family: sans-serif;
+}
+h5{
+    color: white;
+}
+.burger{
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin-right: 1.3rem;
+    cursor: pointer;
+}
+.burger .line{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 5px 0;
+}
+.nav{
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgb(70, 67, 67);
+    box-shadow: 1px 3px 25px black;
+    top: -100vh;
+    transition: .3s ease;
+}
+.main.active .nav{
+    top: 0;
+}
+.nav ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+.nav ul li{
+    margin: 1.5rem 0;
+    text-align: center;
+    transition: all .3s ease;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+.nav ul li:hover a{
+    border-bottom: 1px solid #fab22e;
+    color: #fab22e;
+    transition: all .3s ease;
+}
+.wrapper{
+    width: 80vmin;
+    padding: 50px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgb(97, 63,0 ,0.4);
+    background-color: rgb(39, 37, 37);
+}
+span{
+    display: block;
+    text-align: center;
+    font-size: 100px;    
+}
+p{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+    word-wrap: break-word;
+    margin: 30px 0;
+    opacity: 0;
+}
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+button{
+    display: block;
+    background-color: #fab22e;
+    padding: 7px 20px;
+    border: none;
+    font-size: 18px;
+    color: rgb(39, 37, 37);
+    font-weight: 600;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
