@@ -1,13 +1,12 @@
 console.log("dom")
 //selectors
 const jokeContainer = document.getElementById("joke")
-const dark = document.getElementById("darkjoke")
 const button = document.getElementById("btn")
 const burger = document.querySelector(".burger")
 const main = document.querySelector(".main")
 
 //Api url
-const url = "https://v2.jokeapi.dev/joke/Any?type=single";
+const url = "https://v2.jokeapi.dev/joke/Programming?type=single";
 
 //events
 burger.addEventListener("click", ()=>{
